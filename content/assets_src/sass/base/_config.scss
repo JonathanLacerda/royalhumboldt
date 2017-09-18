@@ -1,0 +1,81 @@
+/*
+|--------------------------------------------------------------------------
+| Caminhos / Imagems e Fonts
+|--------------------------------------------------------------------------
+*/
+
+$path-image:  '/content/assets/images/';
+$path-font:   '/content/assets/fonts/';
+
+/*
+|--------------------------------------------------------------------------
+| Width Principal - Tamanho do Container
+|--------------------------------------------------------------------------
+*/
+
+$main-width:  1170px;
+
+/*
+|--------------------------------------------------------------------------
+| Cores
+|--------------------------------------------------------------------------
+*/
+
+$color-bg:			   #fff; 
+
+$color-text:		   #555555;
+$color-title:		   #555555;
+$color-subtitle:	 #555555;
+$color-link: 		   #66afe9;
+
+$color-theme:	     #ffffff;
+
+$btn-theme: 		   #ffffff;
+$btn-primary: 		 #337ab7;
+$btn-success:		   #5cb85c;
+$btn-danger:		   #d9534f;
+
+$input-bg:			   #ffffff;
+$input-border:		 #cccccc;
+$input-focus:		   #66afe9;
+$input-color:		   #555555;
+
+$selection-bg: 	 	 #ffffff;
+$selection-color:  #555555;
+
+$color-modal: 	   #0C0F13;
+
+
+$color01:          #00f6ff;
+
+/*
+|--------------------------------------------------------------------------
+| Fontes
+|--------------------------------------------------------------------------
+*/
+
+$font-main : 	  'PT Sans';
+$font-regular:  'PT Sans';
+$font-bold: 	  'PT Sans';
+$font-light: 	  'PT Sans';
+
+/*
+|--------------------------------------------------------------------------
+| Media Queries
+|--------------------------------------------------------------------------
+*/
+
+$media-desk: 		    "only screen and (max-width: 1170px)";
+$media-tablet-lg: 	"only screen and (max-width: 960px)";
+$media-tablet: 		  "only screen and (max-width: 770px)";
+$media-mobile-lg: 	"only screen and (max-width: 640px)";
+$media-mobile: 		  "only screen and (max-width: 480px)";
+
+// Ex:  @media #{$media-tablet}
+
+
+/* -------------------------------- 
+
+Main Components 
+
+-------------------------------- */

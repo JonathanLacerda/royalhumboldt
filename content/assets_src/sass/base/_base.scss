@@ -1,0 +1,200 @@
+/*
+|--------------------------------------------------------------------------
+| Geral
+|--------------------------------------------------------------------------
+*/
+
+// background:url(#{$image-path}imagem.png);
+
+@charset 'utf-8';
+
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+}
+
+html {
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+}
+
+body{
+	background-color: $color-bg;
+	font-family: $font-main;
+	color: $color-text;
+
+    &.overlay{
+        overflow: hidden;
+    }
+}
+
+.container{
+  width: $main-width;
+  margin: 0 auto;
+  @extend .clearfix;
+}
+
+.container-full {
+  margin: 0 auto;
+  width: 100%;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Tipografia
+|--------------------------------------------------------------------------
+*/
+
+p{
+  margin: 0 0 10px 0;
+}
+
+em{
+  font-family: $font-light;
+  font-style: italic;
+}
+
+hr{
+  border: solid #ddd;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 10px 0;
+  height: 0;
+}
+
+ul{
+  list-style-type: none;
+}
+
+textarea{
+  padding-top:5px;
+}
+
+h1, h2, h3, h4, h5, h6, strong, b{
+  font-family: $font-bold;
+  font-weight: bold;
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Links
+|--------------------------------------------------------------------------
+*/
+
+a{
+  color: $color-link;
+  text-decoration: none;
+  outline: 0;
+  background: transparent;
+
+  &:hover   { color: lighten($color-link, 15%); }
+  &:visited { color: lighten($color-link, 5%); }
+  &:active  { color: lighten($color-link, 5%); }
+
+
+}
+
+/*
+|--------------------------------------------------------------------------
+| Imagem
+|--------------------------------------------------------------------------
+*/
+
+img {
+  border: 0;
+  height: auto;
+  max-width: 100%;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Tabela
+|--------------------------------------------------------------------------
+*/
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Botões
+|--------------------------------------------------------------------------
+*/
+
+button,
+input[type="button"],
+input[type="submit"] {
+  cursor: pointer;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Seleção
+|--------------------------------------------------------------------------
+*/
+
+::selection{
+  background: $selection-bg;
+  color:$selection-color;
+}
+
+::-moz-selection{
+  background: $selection-bg;
+  color:$selection-color;
+}
+
+img::selection      { background: transparent; }
+img::-moz-selection { background: transparent; }
+
+
+.rhb__font{
+    font-family: 'rounded_sansregular';  
+    font-size: 72px;
+    background: -webkit-linear-gradient(#eed8b5, #d1a753);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.col-no-padding{
+    padding: 0;
+}
+
+.aling-center{
+  text-align: center;
+}
+
+.rhb__title-letter{
+  position: relative;
+  z-index: 3;
+
+  .rhb__letter-behind{
+    font-family: 'rounded_sansregular';
+    position: absolute;
+    top: -157px;
+    left: -30px;
+    background: -webkit-linear-gradient(#eed8b5, #d1a753);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 244px;
+    height: 250px;
+    line-height: 178px;
+    z-index: -1;
+  }
+
+}
+
+
+
